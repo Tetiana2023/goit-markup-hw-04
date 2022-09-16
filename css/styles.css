@@ -119,10 +119,12 @@ body {
 	margin-left: 50px;
 }
 
+
 .contakts .link:hover,
 .contakts .link:focus {
 	color: var(--accent-color);
 }
+
 .contakts {
 	display: flex;
 	margin-left: auto;
