@@ -20,6 +20,8 @@
 	--logo-color: #000000;
 	--footer-tel-mail-color: rgba(255, 255, 255, 0.6);
 	--border: #eeeeee;
+	--border-clients: #AFB1B8;
+	
 }
 
 h1,
@@ -42,12 +44,15 @@ ul {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
+* {
+	outline: 1px solid tomato;
+}
 body {
 	color: var(--primery-text-color);
 	background-color: var(--primery-bg-color);
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 0.03em;
+	
 }
 .list {
 	list-style: none;
@@ -263,7 +268,14 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 }
-
+.features-svg {
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: var(--secondary-bg-color);
+	margin-bottom: 30px;
+	padding: 25px 100px;
+}
 
 
 /* What we do */
@@ -276,7 +288,7 @@ body {
 	margin-left: 30px;
 }
 .whatwedo .foto {
-	display: block;
+	display: block; 
 }
 .section-whatwedo {
 	padding-top: 47px;
@@ -320,11 +332,57 @@ body {
 	font-size: 16px;
 	line-height: 1.9;
 	text-align: center;
+	margin-bottom: 16px;
+}
+.social-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 
+.social-item:not(:last-child) {
+	margin-right: 10px;
+}
+.social-link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	
+}
+.social-link:hover,
+.social-link:focus {
+	background-color: var(--accent-color);
+
+}
+.social-icon {
+	fill: var(--border-clients);
+}
+.social-link:hover svg,
+.social-link:focus svg {
+	fill: var(--primery-bg-color);
+}
+
+
 /* section klients */
-.section-klients {
+.section-clients {
 	padding: 94px 0;
+}
+.clients-svg {
+	width: 170px;
+	height: 92px;
+	border-radius: 4px;
+	border: 1px solid var(--border-clients);
+	
+}
+.clients {
+	display: flex;
+
+}
+.clients .clients-svg:not(:first-child) {
+	margin-left: 30px;
 }
 
 /* Fotter */
@@ -409,7 +467,7 @@ body {
 .works .item {
 	display: block;
 }
-.works:hover {
+.list-works .works:hover {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
