@@ -108,37 +108,41 @@ body {
 .link:hover,
 .link:focus {
 	color: var(--accent-color);
-	fill: var(--accent-color);
 }
 
 .site-nav .link.current {
 	color: var(--accent-color);
 }
-.contakts .link {
-	/* display: block; */
+.contakts {
+	display: flex;
+	margin-left: auto;
+}
+.contakts-link {
+	display: flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
 	color: var(--primery-text-color);
 	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.4;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	fill: var(--primery-text-color);
 }
 .contakts .item + .item {
 	margin-left: 50px;
 }
-.icon-link {
-	margin-right: 10px;
-} 
 
-
-.contakts .link:hover,
-.contakts .link:focus {
+.contakts .contakts-link:hover,
+.contakts .contakts-link:focus {
 	color: var(--accent-color);
-}
-
-.contakts {
-	display: flex;
-	margin-left: auto;
-}
+	fill: var(--accent-color);
+} 
 
 .site-nav {
 	display: flex;
@@ -357,7 +361,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	
 	
 }
 .social-link:hover,
